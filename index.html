@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSE546T Final Project</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="">
+      <h1>Delaunay Triangulation Visualization</h1>
+    </div>
+    <div class="row">
+      <div class="planeContainer">
+        <svg id="plane"></svg>
+      </div>
+
+      <div class="instrContainer">
+        <div class="instructions">
+          <p>Click to add points</p>
+        </div>
+
+        <div class="legend" style="display:none;">
+        <hr>
+          <div class="legend-item">
+            <div class="legend-icon legend-dot"></div>
+            <span>New point added to current triangulation</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon legend-edge"></div>
+            <span>Potentially illegal edge</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-icon legend-triangle"></div>
+            <span>Triangle containing new point and incident to an illegal edge</span>
+          </div>
+        </div>
+        <button type="button" name="Run" id="run" class="btn btn-primary">Run</button>
+        <div class="warning"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Fisher-Yates shuffle algorithm -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+  <script src="point.js" charset="utf-8"></script>
+  <script src="edge.js" charset="utf-8"></script>
+  <script src="triangle.js" charset="utf-8"></script>
+  <script src="utils.js" charset="utf-8"></script>
+  <script src="delaunayTriangulation.js" charset="utf-8"></script>
+</html>

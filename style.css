@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.instrContainer {
+  border-style: solid;
+  border-width: medium;
+  float: right;
+  width: 25%;
+  padding: 15px;
+}
+
+.planeContainer {
+  float: left;
+  width: 60%;
+  height: 85vh;
+}
+
+#plane {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.edge {
+  stroke: black;
+  stroke-width: 2;
+}
+
+.triangle {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.highlight-triangle {
+  fill: yellow;
+}
+
+.highlight-edge {
+  stroke: blue;
+  stroke-width: 2;
+}
+
+circle#red-dot {
+  fill: red;
+}
+
+.current-step {
+  background-color: LightYellow;
+}
+
+.legend-item {
+  display: flex;
+}
+
+.legend-icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-size: 50%, 50%;
+  background-position: center center;
+}
+
+.legend-dot {
+  background-image: url("./assets/red_point.jpeg");
+}
+
+.legend-edge {
+  background-image: url("./assets/blue_edge.jpeg");
+}
+
+.legend-triangle {
+  background-image: url("./assets/yellow_triangle.jpeg");
+}
+
+.btn {
+  color: white;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: 110%;
+  border: none;
+}
+
+.btn-primary {
+  background: #4F84C4;
+}
+
+.btn-success {
+  background: #88B04B;
+}
+
+.btn-warning {
+  background: #D2691E;
+}
+
+button:disabled {
+  opacity: 50%;
+}
